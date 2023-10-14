@@ -1,20 +1,28 @@
-import * as React from 'react';
-import { Animated, Alert, TouchableOpacity } from 'react-native';
+import { jsx as _jsx } from "react/jsx-runtime";
+import { jsxs as _jsxs } from "react/jsx-runtime";
+import * as React from "react";
+import { Animated, Alert, TouchableOpacity } from "react-native";
 
 function CustomButton() {
-  return (
-    <TouchableOpacity onPress={() => Alert.alert('Hello!')}>
-      <Animated.Text children="Click here!" />
-    </TouchableOpacity>
-  );
+  return /*#__PURE__*/ _jsx(TouchableOpacity, {
+    onPress: () => Alert.alert("Hello!"),
+    children: /*#__PURE__*/ _jsx(Animated.Text, {
+      children: "Click here!",
+    }),
+  });
 }
-
 export default function MyNewWormhole() {
-  const message = React.useMemo(() => 'Hello, world!', []);
-  return (
-    <Animated.View style={{ flex: 1, backgroundColor: 'red' }}>
-      <Animated.Text>{message}</Animated.Text>
-      <CustomButton />
-    </Animated.View>
-  );
+  const message = React.useMemo(() => "Hello, world!", []);
+  return /*#__PURE__*/ _jsxs(Animated.View, {
+    style: {
+      flex: 1,
+      backgroundColor: "red",
+    },
+    children: [
+      /*#__PURE__*/ _jsx(Animated.Text, {
+        children: message,
+      }),
+      /*#__PURE__*/ _jsx(CustomButton, {}),
+    ],
+  });
 }
