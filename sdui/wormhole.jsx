@@ -1,7 +1,6 @@
 import { jsx as _jsx } from "react/jsx-runtime";
 import { jsxs as _jsxs } from "react/jsx-runtime";
-import * as React from "react";
-import { Animated, Alert, TouchableOpacity } from "react-native";
+
 
 function CustomButton() {
   return /*#__PURE__*/ _jsx(TouchableOpacity, {
